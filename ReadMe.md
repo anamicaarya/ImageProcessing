@@ -33,6 +33,12 @@ A small Windows image processing demo in C++ using MFC. It loads BMP images, con
 - Windows
 - Visual Studio with the C++ Desktop Development workload
 
+### How It Works
+
+- **Grayscale**. Converts each pixel to a single luminance value and writes it back to the image buffer.
+- **Edge detection**. Applies a small convolution kernel to approximate intensity gradients and highlights edges.
+- **BMP handling**. `bmpfile.*` provides simple routines to read and write uncompressed BMP files used by the demo.
+ 
 ### Build and Run
 1. Clone the repository.
    ```bash
